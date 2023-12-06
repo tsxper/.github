@@ -18,6 +18,7 @@ and make overall development process more straightforward on both client and ser
 - Less dependencies is better. Zero dependencies is the best.
 - Instances are over plain objects.*
 - Stability over frequent delivery.**
+- IoC over implementing details.***
 
 [ * ] PLain objects are objects created with using object literals. 
 
@@ -28,6 +29,9 @@ const obj = {};
 ```
 
 [ ** ] We are not in the fast delivery race. Always test before push.
+
+[ *** ] Do not try to implement all the domain-specific details yourself. The problems, have been solving by engineers, are very unique. 
+Engineer, that works on a specific problem, has better domain insights. Instead of trying to predict and solve all the possible problems yourself, provide tools and a space to solve the problem in the best way. Also, such details can always be placed in examples.
 
 ## Collaboration
 
